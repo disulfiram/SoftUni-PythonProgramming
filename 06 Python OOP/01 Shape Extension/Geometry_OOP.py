@@ -6,12 +6,14 @@ from Shapes.circle import Circle
 from Shapes.square import Square
 from Shapes.rectangle import Rectangle
 from Shapes.pie import Pie
+from Shapes.polygon import Polygon
 
 FIGURE_TYPES = {
     "circle": Circle,
     "square": Square,
     "rectangle": Rectangle,
     "pie": Pie,
+    "polygon": Polygon,
 }
 
 
