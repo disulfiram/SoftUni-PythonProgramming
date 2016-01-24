@@ -1,9 +1,11 @@
 [
+    {"type": "pie", "center_x": 400, "center_y": 0, "radius": 100, "arg_degrees":90, "color": "pink"},
+    {"type": "pie", "center_x": 400, "center_y": 0, "radius": 100, "arg_degrees":30, "color": "pink"},
+    {"type": "rectangle", "center_x": 0, "center_y": 0, "width":100, "height":200, "color": "green"},
+    {"type": "rectangle", "center_x": 0, "center_y": 0, "width":200, "height":100, "color": "green"},
     {"type": "square", "center_x": 0, "center_y": 0, "side": 2, "color": "black"},
     {"type": "square", "center_x": 0, "center_y": 0, "side": 100, "color": "red"},
     {"type": "square", "center_x": 0, "center_y": 0, "side": 200, "color": "blue"},
     {"type": "circle", "center_x": 0, "center_y": 0, "radius": 50, "color": "blue"},
-    {"type": "circle", "center_x": 0, "center_y": 0, "radius": 100, "color": "red"},
-    {"type": "rectangle", "center_x": 0, "center_y": 0, "width":100, "height":200, "color": "green"},
-    {"type": "rectangle", "center_x": 0, "center_y": 0, "width":200, "height":100, "color": "green"}
+    {"type": "circle", "center_x": 0, "center_y": 0, "radius": 100, "color": "red"}
 ]
