@@ -2,7 +2,6 @@ import sys
 import json
 import turtle
 
-from Shapes.base import Shape
 from Shapes.circle import Circle
 from Shapes.square import Square
 from Shapes.rectangle import Rectangle
@@ -10,8 +9,9 @@ from Shapes.rectangle import Rectangle
 FIGURE_TYPES = {
     "circle": Circle,
     "square": Square,
-    "rectangle" : Rectangle,
+    "rectangle": Rectangle,
 }
+
 
 def main():
     if len(sys.argv) < 2:
@@ -26,10 +26,12 @@ def main():
         print("Invalid input file provided! Error: " + str(e))
         return 2
 
+
 def load_input_data(input_filename):
     with open(input_filename) as f:
         input_data = json.load(f)
         return input_data
+
 
 def create_figures(input_data: dict):
     result = []
@@ -41,6 +43,7 @@ def create_figures(input_data: dict):
         else:
             raise ValueError("Unsupported figure")
     return result
+
 
 def draw_figures(figures):
     for figure in figures:

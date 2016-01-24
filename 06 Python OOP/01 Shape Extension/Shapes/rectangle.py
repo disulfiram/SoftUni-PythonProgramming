@@ -1,5 +1,6 @@
 from .base import Shape
 
+
 class Rectangle(Shape):
 
     def __init__(self, width, height, **kwargs):
@@ -21,7 +22,7 @@ class Rectangle(Shape):
         turtle.setheading(270)
 
         for _ in range(4):
-            if(_ % 2 == 0):
+            if _ % 2 == 0:
                 turtle.forward(self.height)
                 turtle.left(90)
             else:

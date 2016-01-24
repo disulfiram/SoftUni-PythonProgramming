@@ -1,5 +1,6 @@
 from .base import Shape
 
+
 class Square(Shape):
 
     def __init__(self, side, **kwargs):
