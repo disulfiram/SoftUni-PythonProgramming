@@ -5,10 +5,12 @@ import turtle
 from Shapes.base import Shape
 from Shapes.circle import Circle
 from Shapes.square import Square
+from Shapes.rectangle import Rectangle
 
 FIGURE_TYPES = {
     "circle": Circle,
     "square": Square,
+    "rectangle" : Rectangle,
 }
 
 def main():
