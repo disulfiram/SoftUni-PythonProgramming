@@ -1,6 +1,7 @@
 import os
 import sys
 
+
 def main():
     file = sys.argv[1]
     location = sys.argv[2]
