@@ -1,12 +1,14 @@
 import sys
 import json
 import turtle
+import os
 
 from Shapes.circle import Circle
 from Shapes.square import Square
 from Shapes.rectangle import Rectangle
 from Shapes.pie import Pie
 from Shapes.polygon import Polygon
+from Loader.JSONLoader import JSONLoader
 
 FIGURE_TYPES = {
     "circle": Circle,
@@ -32,9 +34,16 @@ def main():
 
 
 def load_input_data(input_filename):
-    with open(input_filename) as f:
-        input_data = json.load(f)
-        return input_data
+    filename, extension = os.path.splitext(input_filename)
+    loader = None
+    if(extension == ".json"):
+        loader = JSONLoader(input_filename)
+    elif extension == ".yaml":
+        pass
+    if loader is not None:
+        return loader.load()
+    else:
+        raise ValueError("Unsupported file format:{}".format(extension))
 
 
 def create_figures(input_data: dict):
