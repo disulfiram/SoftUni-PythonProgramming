@@ -15,4 +15,4 @@ class SaleTransaction:
             self.country = arguments[1]
             self.city = arguments[2]
             self.datetime = iso8601.parse_date(arguments[3])
-            self.price = arguments[4]
+            self.price = float(arguments[4])

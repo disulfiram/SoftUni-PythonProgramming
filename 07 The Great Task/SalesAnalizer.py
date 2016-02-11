@@ -12,9 +12,24 @@ def main():
     try:
         catalog = parse_catalog(sys.argv[1])
         sales = parse_sales(sys.argv[2])
-        #print_analisis(catalog, sales)
+        print_analisys(catalog, sales)
     finally:
         pass
+
+
+def print_analisys(catalog, sales):
+    number_of_sales = len(sales)
+    print("Summary")
+    print("-------")
+    print("Total number of sales: {}".format(str(number_of_sales)))
+    print("Total income: {}".format(str(total_income(sales))))
+
+
+def total_income(sales):
+    result = float()
+    for sale in sales:
+        result += sale.price
+    return result
 
 
 def parse_sales(salesCSV):
