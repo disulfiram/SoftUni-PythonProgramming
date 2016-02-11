@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93a5f8fd-6575-40ef-93bd-4326dd4b75a4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/YAMLLoader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Geometry_OOP.py" afterPath="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Geometry_OOP.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/loader.py" afterPath="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/loader.py" />
     </list>
     <ignored path="SoftUni-PythonProgramming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +54,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1455196891223" expanded="true" signature="25:304" placeholder="..." />
+                <marker date="1455196891223" expanded="true" signature="58:247" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,11 +77,33 @@
       <file leaf-file-name="Geometry_OOP.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Geometry_OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7265522">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.51122856">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YAMLLoader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/YAMLLoader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input-file.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06 Python OOP/01 Shape Extension/input-file.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.117647">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,6 +145,8 @@
       <list>
         <option value="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/loader.py" />
         <option value="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/JSONLoader.py" />
+        <option value="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/YAMLLoader.py" />
+        <option value="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/input-file.yaml" />
         <option value="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Geometry_OOP.py" />
       </list>
     </option>
@@ -355,7 +383,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SoftUni-PythonProgramming" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Geometry_OOP.py" />
-      <option name="PARAMETERS" value="input-file.json" />
+      <option name="PARAMETERS" value="input-file.yaml" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -593,7 +621,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1455196891223" expanded="true" signature="25:304" placeholder="..." />
+            <marker date="1455196891223" expanded="true" signature="58:247" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -607,10 +638,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Loader/YAMLLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 Python OOP/01 Shape Extension/input-file.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.117647">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/06 Python OOP/01 Shape Extension/Geometry_OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7265522">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state vertical-scroll-proportion="-0.51122856">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

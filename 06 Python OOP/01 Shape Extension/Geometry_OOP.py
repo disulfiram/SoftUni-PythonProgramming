@@ -9,6 +9,7 @@ from Shapes.rectangle import Rectangle
 from Shapes.pie import Pie
 from Shapes.polygon import Polygon
 from Loader.JSONLoader import JSONLoader
+from Loader.YAMLLoader import YAMLLoader
 
 FIGURE_TYPES = {
     "circle": Circle,
@@ -39,7 +40,7 @@ def load_input_data(input_filename):
     if(extension == ".json"):
         loader = JSONLoader(input_filename)
     elif extension == ".yaml":
-        pass
+        loader = YAMLLoader(input_filename)
     if loader is not None:
         return loader.load()
     else:
