@@ -1,6 +1,7 @@
 import sys
 import csv
 from CatalogItem import CatalogItem
+from SaleTransaction import SaleTransaction
 
 
 def main():
@@ -10,8 +11,19 @@ def main():
 
     try:
         catalog = parse_catalog(sys.argv[1])
+        sales = parse_sales(sys.argv[2])
+        #print_analisis(catalog, sales)
     finally:
         pass
+
+
+def parse_sales(salesCSV):
+    result = list()
+    with open(salesCSV) as f:
+        reader = csv.reader(f)
+        for row in reader:
+            result.append(SaleTransaction(row))
+    return result
 
 
 def parse_catalog(catalogCSV):
