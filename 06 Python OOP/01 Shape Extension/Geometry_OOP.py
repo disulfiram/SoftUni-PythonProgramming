@@ -1,5 +1,4 @@
 import sys
-import json
 import turtle
 import os
 
@@ -37,7 +36,7 @@ def main():
 def load_input_data(input_filename):
     filename, extension = os.path.splitext(input_filename)
     loader = None
-    if(extension == ".json"):
+    if extension == ".json":
         loader = JSONLoader(input_filename)
     elif extension == ".yaml":
         loader = YAMLLoader(input_filename)
