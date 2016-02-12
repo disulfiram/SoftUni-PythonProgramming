@@ -1,3 +1,6 @@
+import csv
+
+
 class CatalogItem:
     """def __init__(self, id, name, colors, group, sport, category, subcategory, sex):
         self.id = id
@@ -29,3 +32,12 @@ class CatalogItem:
             self.category = arguments[5]
             self.subcategory = arguments[6]
             self.sex = arguments[7]
+
+    def parse_catalog(catalogCSV):
+        result = {}
+        with open(catalogCSV) as f:
+            reader = csv.reader(f, delimiter=',')
+            for row in reader:
+                c = CatalogItem(row)
+                result[c.id] = c
+        return result
