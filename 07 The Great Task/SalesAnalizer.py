@@ -1,5 +1,8 @@
 import sys
 import csv
+import iso8601
+import datetime
+import pytz
 from CatalogItem import CatalogItem
 from SaleTransaction import SaleTransaction
 
@@ -25,6 +28,26 @@ def print_analisys(catalog, sales):
     print("Total number of sales: {}".format(str(number_of_sales)))
     print("Total income: {}".format(str(income)))
     print("Average price per transaction: {}".format(str(income/number_of_sales)))
+    print("Begin of data period: {}".format(begin_period(sales).isoformat()))
+    print("End of data period: {}".format(end_period(sales).isoformat()))
+
+
+def end_period(sales):
+    result = datetime.datetime.min
+    result = result.replace(tzinfo=pytz.timezone('Europe/Sofia'))
+    for sale in sales:
+        if sale.datetime > result:
+            result = sale.datetime
+    return result
+
+
+def begin_period(sales):
+    result = datetime.datetime.max
+    result = result.replace(tzinfo=pytz.timezone('Europe/Sofia'))
+    for sale in sales:
+        if sale.datetime < result:
+            result = sale.datetime
+    return result
 
 
 def total_income(sales):
