@@ -4,7 +4,7 @@ import sys
 def main():
     string = input()
     symbols = {}
-    if string.isspace() or not string.whitespace():
+    if not string.isspace() and string != "":
         for symbol in string:
             if symbol not in symbols:
                 symbols[symbol] = 0
