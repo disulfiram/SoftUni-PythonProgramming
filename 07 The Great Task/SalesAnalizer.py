@@ -19,10 +19,12 @@ def main():
 
 def print_analisys(catalog, sales):
     number_of_sales = len(sales)
+    income = total_income(sales)
     print("Summary")
     print("-------")
     print("Total number of sales: {}".format(str(number_of_sales)))
-    print("Total income: {}".format(str(total_income(sales))))
+    print("Total income: {}".format(str(income)))
+    print("Average price per transaction: {}".format(str(income/number_of_sales)))
 
 
 def total_income(sales):
