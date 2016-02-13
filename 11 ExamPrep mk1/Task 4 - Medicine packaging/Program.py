@@ -1,4 +1,5 @@
 import sys
+import collections
 
 
 def main():
@@ -21,7 +22,7 @@ def main():
 
 
 def parse_medicine(file):
-    result = {}
+    result = collections.OrderedDict()
     with open(file, encoding="utf-8") as f:
         for row in f:
             values = row.split(sep=',')
