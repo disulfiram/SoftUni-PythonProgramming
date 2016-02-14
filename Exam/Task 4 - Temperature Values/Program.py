@@ -43,10 +43,6 @@ def main():
             for city in sorted(cities):
                 if city not in dates[date]:
                     if not date_already_printed:
-                        #print_date = datetime.datetime(date.year, date.month, date.day)
-                        #print(str(date.year) + '-' + str(date.month) + '-' + str(date.day), end="")
-                        #print(date.isoformat(), end="")
-                        #print(print_date.isoformat(), end="")
                         print(date.strftime('%Y-%m-%d'), end="")
                         date_already_printed = True
                     print("," + city, end="")
