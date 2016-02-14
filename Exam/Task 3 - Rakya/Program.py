@@ -10,6 +10,8 @@ def main():
             alcohol = float(input())
         except:
             raise InvalidInputException
+        if alcohol <= 0:
+            raise InvalidInputException
         jugs_file = input()
         if not os.path.isfile(jugs_file):
             raise InvalidInputException
@@ -27,6 +29,8 @@ def main():
                     r = float(values[1])
                     h = float(values[2])
                 except:
+                    raise InvalidInputException
+                if r <= 0 or h <= 0:
                     raise InvalidInputException
                 jugs[values[0]] = math.pi * math.pow(r,2) * h
                 file_valid = True
