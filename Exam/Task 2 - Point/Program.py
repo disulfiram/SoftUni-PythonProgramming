@@ -11,6 +11,7 @@ def main():
         if not os.path.isfile(movement_file):
             raise InvalidInputException
         position = [0.0,0.0]
+        file_valid = False
         with open(movement_file) as f:
             for row in f:
                 if row.strip() == "":
@@ -31,6 +32,9 @@ def main():
                     position[0] -= step
                 else:
                     raise InvalidInputException
+                file_valid = True
+        if not file_valid:
+            raise InvalidInputException
         print("X {:.3f}".format(position[0]))
         print("Y {:.3f}".format(position[1]))
     except InvalidInputException:
