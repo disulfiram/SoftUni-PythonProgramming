@@ -14,8 +14,14 @@ def main():
         cities = set()
         dates = collections.OrderedDict()
         with open(temps_file, encoding="utf-8") as f:
-            reader = csv.reader(f, delimiter=',')
+            reader = csv.reader(f)
             for row in reader:
+                if len(row) == 0:
+                    continue
+                if "" in row:
+                    raise InvalidInputException
+                if len(row) != 3:
+                    raise InvalidInputException
                 if row[1] not in cities:
                     cities.add(row[1])
                 try:
@@ -24,7 +30,9 @@ def main():
                     raise InvalidInputException
                 if parsed_date not in dates:
                     dates[parsed_date] = list()
-                dates[iso8601.parse_date(row[0])].append(row[1])
+                if row[1] in dates[parsed_date]:
+                    raise InvalidInputException
+                dates[parsed_date].append(row[1])
 
                 file_valid = True
         if not file_valid:
