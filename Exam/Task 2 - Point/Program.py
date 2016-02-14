@@ -2,9 +2,6 @@ import sys
 import os
 
 
-_LOSS = 1.098
-
-
 def main():
     try:
         movement_file = input()
